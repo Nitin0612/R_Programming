@@ -1,5 +1,5 @@
 # R_Programming
 
-#Practice Question For Company_Profit :
+Practice Question For Company_Profit :
 
-jsfhu
+Question 1 : Which company has the highest profit?
