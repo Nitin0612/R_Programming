@@ -39,3 +39,34 @@ print(lowest_profit_company_name)
 [1] -795996
 [1] "Company 92"
 ```
+**Question 3:What is the average profit across all companies?**
+```R
+company_profit <- read.csv("company_profit.csv")
+average_profit_company<- mean(company_profit$Profit)
+
+# Print the average profit value
+print(average_profit_company)
+```
+**Output:**
+```
+[1] 2095144
+```
+
+**Question 4:What is the distribution of profits across all companies? (Histogram)**
+```R
+# Load the CSV file
+company_profit <- read.csv("company_profit.csv")
+
+# Create a histogram of profits
+hist(company_profit$Profit, 
+     main = "Histogram of Profits", 
+     xlab = "Profit", 
+     ylab = "Frequency", 
+     col = "blue", 
+     border = "black", 
+     breaks = 20)
+```
+**Output:**
+
+![image](https://github.com/user-attachments/assets/63523d26-2342-4453-9583-2dce96f0e311)
+
