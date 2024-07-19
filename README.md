@@ -100,3 +100,50 @@ Company.Name	Profit_per_Employee
 5	Company 5	14144.6460
 6	Company 6	585.9745
 ```
+**Question 6:Which are the top 5 companies by revenue?**
+```R
+# Load the CSV file
+company_profit <- read.csv("company_profit.csv")
+
+# Find the top 5 companies by revenue
+top_5_revenue <- head(company_profit[order(-company_profit$Revenue), ], 5)
+
+# Select and print the company name and revenue
+top_5_revenue <- top_5_revenue[, c("Company.Name", "Revenue")]
+print("Top 5 Companies by Revenue:")
+print(top_5_revenue)
+```
+**Output:**
+```
+[1] "Top 5 Companies by Revenue:"
+   Company.Name Revenue
+66   Company 66 9891087
+26   Company 26 9829778
+65   Company 65 9767124
+39   Company 39 9708898
+12   Company 12 9699352
+```
+
+**Question 7:Which are the top 5 companies by profit?**
+```R
+# Load the CSV file
+company_profit <- read.csv("company_profit.csv")
+
+# Find the top 5 companies by profit
+top_5_profit <- head(company_profit[order(-company_profit$Profit), ], 5)
+
+# Select and print the company name and profit
+top_5_profit <- top_5_profit[, c("Company.Name", "Profit")]
+print("Top 5 Companies by Profit:")
+print(top_5_profit)
+```
+**Output:**
+```
+[1] "Top 5 Companies by Profit:"
+   Company.Name  Profit
+20   Company 20 4975093
+12   Company 12 4916471
+18   Company 18 4909830
+60   Company 60 4843891
+5     Company 5 4795035
+```
