@@ -160,6 +160,7 @@ boxplot(company_profit$Revenue,
         border = "black")
 ```
 **Output:**
+
 ![image](https://github.com/user-attachments/assets/c25cacde-6d98-42f0-9ae2-16ae685dc73c)
 
 
