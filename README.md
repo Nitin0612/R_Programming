@@ -147,3 +147,19 @@ print(top_5_profit)
 60   Company 60 4843891
 5     Company 5 4795035
 ```
+**Question 8:What is the distribution of revenues across companies? (Boxplot)**
+```R
+# Load the CSV file
+company_profit <- read.csv("company_profit.csv")
+
+# Create a boxplot of revenues
+boxplot(company_profit$Revenue,
+        main = "Boxplot of Revenues",
+        ylab = "Revenue",
+        col = "blue",
+        border = "black")
+```
+**Output:**
+![image](https://github.com/user-attachments/assets/c25cacde-6d98-42f0-9ae2-16ae685dc73c)
+
+
